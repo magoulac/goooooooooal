@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div>
+  <div> Today's matches are: </div>
+  {% for i in data %}
+  {{ i.home_team.code }} v {{ i.away_team.code }}</br> 
+  {% endfor %}
+</div>
+{% endblock %}

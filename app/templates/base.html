@@ -1,0 +1,17 @@
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - World Cup App</title>
+      {% else %}
+      <title>Welcome to the World Cup App</title>
+      {% endif %}
+    </head>
+    <body>
+      <div>
+	WC:
+	<a href="{{ url_for('index') }}">Home</a>
+      </div>
+      <hr>
+      {% block content %}{% endblock %}
+    </body>
+</html>
